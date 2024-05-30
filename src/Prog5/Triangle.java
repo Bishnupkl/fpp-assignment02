@@ -1,6 +1,6 @@
 package Prog5;
 
-public class Triangle {
+final public class Triangle {
    private final double height;
    private final double base;
 

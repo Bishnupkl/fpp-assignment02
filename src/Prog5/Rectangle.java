@@ -1,6 +1,6 @@
 package Prog5;
 
-public class Rectangle {
+final public class Rectangle {
 
     private final double width;
     private final double height;
