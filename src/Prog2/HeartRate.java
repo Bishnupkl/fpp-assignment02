@@ -9,9 +9,9 @@ public class HeartRate {
     private static double LB = 0.50;
     private static double UB = 0.85;
 
-    String firstname;
-    String lastname;
-    LocalDate dateOfDate;
+    private String firstname;
+    private String lastname;
+    private LocalDate dateOfDate;
 
     public HeartRate(String firstname, String lastname, LocalDate dateOfDate) {
         this.firstname = firstname;
