@@ -2,10 +2,11 @@ package Prog2;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
 
 public class HeartRate {
     private static int RHR = 70;
-    private static double LB = 0.5;
+    private static double LB = 0.50;
     private static double UB = 0.85;
 
     String firstname;
@@ -19,8 +20,7 @@ public class HeartRate {
     }
 
     public long getAge(){
-        Period peroid = Period.between(dateOfDate, LocalDate.now() );
-        return peroid.getYears();
+        return Period.between(dateOfDate, LocalDate.now()).getYears();
     }
 
     public double MHR(){
@@ -34,5 +34,16 @@ public class HeartRate {
     }
     public double UBTHR(){
         return AHR()*UB+RHR;
+    }
+    @Override
+    public String toString(){
+        return STR."""
+                The Target Heart Rate Range is Between \{LBTHR()} And \{UBTHR()}"
+                First Name: \{firstname}
+                Last Name: \{lastname}
+                Age: \{getAge()}
+                Date of Birth: \{dateOfDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))}
+                Maximum Heart Rate: \{MHR()} Year(s) old!
+                """;
     }
 }

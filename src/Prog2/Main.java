@@ -16,11 +16,7 @@ public class Main {
         LocalDate birthOfDate = readDateTime(scanner);
 //        HeartRate heartRate = new HeartRate("Group5", "FFP", LocalDate.of(1999, 12, 21));
         HeartRate heartRate = new HeartRate(firstName, lastName, birthOfDate);
-        System.out.println(STR."First Name: \{heartRate.firstname}");
-        System.out.println(STR."Last Name: \{heartRate.lastname}");
-        System.out.println(STR."Age: \{heartRate.getAge()}");
-        System.out.println(STR."Date of Birth: \{heartRate.dateOfDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))}");
-        System.out.println(STR."Maximum Heart Rate: \{heartRate.MHR()} Year(s) old!");
+        System.out.println(heartRate);
         scanner.close();
 
     }
