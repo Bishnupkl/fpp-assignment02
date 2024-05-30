@@ -9,7 +9,7 @@ public class Main {
         Address address2 = new Address("1000 N 4th Street", "FairField", "IA", "52557");
         Address address3 = new Address("789 Oak St", "San Francisco", "CA", "94102");
 
-        Customer c1 = new Customer("ALex", "Smith", "332-291-4444");
+        Customer c1 = new Customer("Alex", "Smith", "332-291-4444");
         c1.setBillingAddress(address1);
         c1.setShippingAddress(address3);
 
