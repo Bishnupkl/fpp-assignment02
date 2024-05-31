@@ -1,7 +1,7 @@
 package Prog5;
 
 //Area of a circle = PI * radius * radius
-public class Circle {
+final public class Circle {
     private final double pi = Math.PI;
     private final double radius;
 
