@@ -43,7 +43,7 @@ public class HeartRate {
                 Last Name: \{lastname}
                 Age: \{getAge()}
                 Date of Birth: \{dateOfDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))}
-                Maximum Heart Rate: \{MHR()} Year(s) old!
+                Maximum Heart Rate: \{MHR()}
                 """;
     }
 }
